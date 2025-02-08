@@ -1,0 +1,75 @@
+$light-gray: #a0a0a0;
+$dark-gray: #333;
+$almost-black: #111;
+$dark-gray-hover: #222;
+$border-color: #e5e7eb;
+
+.navbar {
+  padding: 1.5rem;
+  border-bottom: 1px solid $border-color;
+
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .time-display {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .time-label {
+        color: $light-gray;
+        font-weight: 500;
+      }
+
+      .time-box {
+        background-color: $dark-gray;
+        border: 1px solid rgb(24, 24, 26);
+        padding: 14px 18px;
+        width: 110px;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .time-text {
+          color: #ccc;
+          font-size: 1rem;
+          font-weight: 600;
+          letter-spacing: 0.07em;
+        }
+      }
+    }
+
+    .menu-button {
+      height: 2.75rem;
+      width: 2.75rem;
+      border-radius: 50%;
+      background-color: $almost-black;
+      border: 1px solid #444;
+      transition: all 0.5s;
+      cursor: pointer;
+      position: relative;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: $dark-gray-hover;
+      }
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}

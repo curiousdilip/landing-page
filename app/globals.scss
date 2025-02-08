@@ -1,0 +1,24 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --darkest-gray: rgb(5, 5, 5);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+body {
+  background-color: var(--darkest-gray);
+  color: var(--white);
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 750px;
+}
